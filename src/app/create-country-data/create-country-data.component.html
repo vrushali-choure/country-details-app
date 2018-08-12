@@ -1,0 +1,8 @@
+<p>
+    Create Component
+</p>
+
+<select #countryDropDown (change)="onChange($event)">
+    <option value="" selected disabled hidden>Choose Country</option>
+    <option *ngFor="let id of keys">{{id}}</option>
+</select>
